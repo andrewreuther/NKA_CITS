@@ -1,0 +1,22 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<policyComments xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://www.microsoft.com/GroupPolicy/CommentDefinitions">
+  <policyNamespaces>
+    <using prefix="ns0" namespace="Microsoft.Policies.OneDrive"></using>
+    <using prefix="ns1" namespace="Microsoft.Policies.WindowsDefender"></using>
+    <using prefix="ns2" namespace="Microsoft.Policies.WindowsDefenderSecurityCenter"></using>
+  </policyNamespaces>
+  <comments>
+    <admTemplate>
+      <comment policyRef="ns1:Exclusions_Paths" commentText="$(resource.ns1_Exclusions_Paths)"></comment>
+      <comment policyRef="ns2:EnterpriseCustomization_EnableCustomizedToasts" commentText="$(resource.ns2_EnterpriseCustomization_EnableCustomizedToasts)"></comment>
+      <comment policyRef="ns2:EnterpriseCustomization_EnableInAppCustomization" commentText="$(resource.ns2_EnterpriseCustomization_EnableInAppCustomization)"></comment>
+    </admTemplate>
+  </comments>
+  <resources minRequiredRevision="1.0">
+    <stringTable>
+      <string id="ns1_Exclusions_Paths">Add MSSQL BIN paths as required</string>
+      <string id="ns2_EnterpriseCustomization_EnableCustomizedToasts">https://us.nihonkohden.com</string>
+      <string id="ns2_EnterpriseCustomization_EnableInAppCustomization">https://us.nihonkohden.com</string>
+    </stringTable>
+  </resources>
+</policyComments>
